@@ -237,8 +237,84 @@ img {
 }
 
 /* FILTERS TABS */
+.filters-content {
+  margin: 2rem 0 2.5rem;
+  background-color: var(--text-color-light);
+  padding: 0.375rem;
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 0.5rem;
+}
+
+.filters-button {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 1rem;
+  color: var(--title-color);
+  font-size: var(--small-font-size);
+  font-weight: 500;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  background-color: transparent;
+  transition: .3s;
+}
+
+.filters-button:hover{
+  background-color: var(--body-color);
+}
 
 /* PROJECTS */
+.projects-card{
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.projects-card img{
+  width: 100%;
+  height: 100%;
+}
+
+.projects-modal{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  bottom: -100%;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    hsla(var(--hue), 24%, 40%, .3) 0%,
+    hsla(var(--hue), 24%, 4%, 1) 95%
+  );
+  display: grid;
+  align-items: flex-end;
+  padding: 1.5rem 1.25rem;
+  transition: .3s;
+}
+
+.projects-subtitle,
+.projects-title{
+  color: #FFF;
+}
+
+.projects-subtitle{
+  font-size: var(--smaller-font-size);
+}
+
+.projects-title{
+  font-size: var(--h3-font-size);
+  margin-bottom: .75rem;
+}
+
+.porjects-button{
+  padding: .5rem;
+}
+
+.projects-card:hover .projects-modal{
+  bottom: 0;
+}
 
 /* SKILLS */
 
