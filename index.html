@@ -1,331 +1,493 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- FAVICON -->
-    <link rel="shortcurt icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="description"
+        content="Portfólio fictício de Gianell Vusy, desenvolvedor front-end especializado na criação de interfaces modernas, acessíveis e responsivas.">
+    <meta name="author" content="Wilhan Mac'Arthur">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#11131f">
 
-    <!-- REMIX ICONS -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Gianell Vusy | Desenvolvedor Front-end">
+    <meta property="og:description"
+        content="Portfólio demonstrativo com projetos de interfaces modernas, responsivas e acessíveis.">
+    <meta property="og:locale" content="pt_BR">
 
+    <link rel="shortcut icon" href="img/favicon.png" type="image/png">
 
-    <!-- CSS-->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Portfólio</title>
+    <title>Gianell Vusy | Desenvolvedor Front-end</title>
 </head>
 
 <body>
-
-    <!-- HEADER PROFILE -->
-    <header class="profile container">
-        <!-- Theme button -->
-        <i class="ri-moon-line change-theme" id="theme-button"></i>
+    <a href="#main-content" class="skip-link">
+        Pular para o conteúdo principal
+    </a>
+    <header class="profile container" id="home">
+        <button type="button" class="change-theme" id="theme-button" aria-label="Alterar tema" title="Alterar tema">
+            <i class="ri-moon-line theme-icon theme-icon-moon" aria-hidden="true"></i>
+            <i class="ri-sun-line theme-icon theme-icon-sun" aria-hidden="true"></i>
+        </button>
         <div class="profile-container grid">
             <div class="profile-data">
-                <div class="profile-border">
+                <div class="profile-border" aria-hidden="true">
                     <div class="profile-perfil">
-                        <!-- Insert your image, according to the example size of the protfolio -->
-                        <img src="img/perfil.png" alt="404 not found">
+                        <img src="img/perfil.png" alt="Foto de perfil fictícia de Gianell Vusy" width="160"
+                            height="160">
                     </div>
                 </div>
-
-                <h2 class="profile-name">Gianell Vusy</h2>
-                <h3 class="profile-profession">Web developer</h3>
-
-                <ul class="profile-social">
-                    <a href="https://www.linkedin.com" target="_blank" class="profile-social-link">
-                        <i class="ri-linkedin-box-fill"></i>
-                    </a>
-                    <a href="https://www.github.com" target="_blank" class="profile-social-link">
-                        <i class="ri-github-fill"></i>
-                    </a>
-                    <a href="https://www.instagram.com" target="_blank" class="profile-social-link">
-                        <i class="ri-instagram-line"></i>
-                    </a>
+                <p class="profile-eyebrow">Olá, eu sou</p>
+                <h1 class="profile-name">Gianell Vusy</h1>
+                <p class="profile-profession">
+                    Desenvolvedor Front-end
+                </p>
+                <p class="profile-description">
+                    Crio interfaces digitais modernas, responsivas e intuitivas,
+                    transformando ideias em experiências agradáveis para diferentes
+                    dispositivos e usuários.
+                </p>
+                <ul class="profile-social" aria-label="Redes sociais">
+                    <li>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                            class="profile-social-link" aria-label="Abrir LinkedIn em uma nova aba" title="LinkedIn">
+                            <i class="ri-linkedin-box-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.github.com/" target="_blank" rel="noopener noreferrer"
+                            class="profile-social-link" aria-label="Abrir GitHub em uma nova aba" title="GitHub">
+                            <i class="ri-github-fill" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            class="profile-social-link" aria-label="Abrir Instagram em uma nova aba" title="Instagram">
+                            <i class="ri-instagram-line" aria-hidden="true"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
+            <dl class="profile-info grid" aria-label="Resumo profissional">
+                <div class="profile-info-group">
+                    <dt class="profile-info-number">5+</dt>
+                    <dd class="profile-info-description">
+                        Anos de experiência
+                    </dd>
+                </div>
 
-            <div class="profile-info grid">
                 <div class="profile-info-group">
-                    <h3 class="profile-info-number">7</h3>
-                    <p class="profile-info-description">
-                        Years of <br> work
-                    </p>
+                    <dt class="profile-info-number">42</dt>
+                    <dd class="profile-info-description">
+                        Projetos desenvolvidos
+                    </dd>
                 </div>
                 <div class="profile-info-group">
-                    <h3 class="profile-info-number">+124</h3>
-                    <p class="profile-info-description">
-                        Completed <br> projects
-                    </p>
+                    <dt class="profile-info-number">28</dt>
+                    <dd class="profile-info-description">
+                        Clientes atendidos
+                    </dd>
                 </div>
-                <div class="profile-info-group">
-                    <h3 class="profile-info-number">96</h3>
-                    <p class="profile-info-description">
-                        Satisfied <br> customers
-                    </p>
-                </div>
-            </div>
-
+            </dl>
             <div class="profile-buttons">
-                <!-- Insert your CV -->
-                <a download="" href="pdf/Gianell-Cv.pdf" class="button">
-                    Download CV <i class="ri-download-line"></i>
+                <a href="#projects" class="button">
+                    Ver projetos
+                    <i class="ri-arrow-down-line" aria-hidden="true"></i>
                 </a>
-
-                <div class="profile-buttons-small">
-                    <!-- Inset a real number plus country code -->
-                    <a href="#" target="_blank" class="button button-small button-gray">
-                        <i class="ri-whatsapp-line"></i>
-                    </a>
-
-                    <!-- Insert your brande nome or profile -->
-                    <a href="#" target="_blank" class="button button-small button-gray">
-                        <i class="ri-mail-line"></i>
-                    </a>
-                </div>
+                <a href="pdf/Gianell-Cv.pdf" class="button button-outline" download>
+                    Baixar currículo
+                    <i class="ri-download-line" aria-hidden="true"></i>
+                </a>
             </div>
-
         </div>
     </header>
-
-    <!-- MAIN -->
-    <main class="main">
-        <section class="filters container">
-            <!-- FILTERS TABS -->
-            <ul class="filters-content">
-                <button class="filters-button filter-tab-active" data-target="#projects">
-                    Projects
+    <main class="main" id="main-content">
+        <section class="filters container" aria-labelledby="portfolio-title">
+            <div class="section-heading">
+                <p class="section-eyebrow">Portfólio demonstrativo</p>
+                <h2 class="section-title" id="portfolio-title">
+                    Projetos e conhecimentos
+                </h2>
+                <p class="section-description">
+                    Uma seleção de projetos conceituais e das principais competências
+                    utilizadas na criação de experiências digitais.
+                </p>
+            </div>
+            <div class="filters-content" role="tablist" aria-label="Conteúdo do portfólio">
+                <button type="button" class="filters-button filter-tab-active" id="projects-tab" role="tab"
+                    data-target="#projects" aria-controls="projects" aria-selected="true">
+                    <i class="ri-layout-grid-line" aria-hidden="true"></i>
+                    Projetos
                 </button>
-                <button class="filters-button" data-target="#skills">
-                    Skills
+                <button type="button" class="filters-button" id="skills-tab" role="tab" data-target="#skills"
+                    aria-controls="skills" aria-selected="false" tabindex="-1">
+                    <i class="ri-code-s-slash-line" aria-hidden="true"></i>
+                    Conhecimentos
                 </button>
-
-            </ul>
-
+            </div>
             <div class="filters-sections">
-                <!-- PROJECTS -->
-                <div class="projects-content grid filters-active" data-content id="projects">
+                <div class="projects-content grid filters-active" data-content id="projects" role="tabpanel"
+                    aria-labelledby="projects-tab" tabindex="0">
                     <article class="projects-card">
-                        <img src="img/project1.jpg" alt="" class="projects-card">
+                        <img src="img/project1.jpg" alt="Interface conceitual de um dashboard financeiro"
+                            class="projects-image" width="640" height="420" loading="lazy">
 
                         <div class="projects-modal">
-                            <div>
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Payment Site</h3>
-                                <a href="#" class="projects-button button button-small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="img/project2.jpg" alt="" class="projects-card">
+                            <span class="projects-category">Dashboard</span>
 
-                        <div class="projects-modal">
-                            <div>
-                                <span class="projects-subtitle">Web</span>
-                                <h3 class="projects-title">Portfolio website</h3>
-                                <a href="#" class="projects-button button button-small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="img/project3.jpg" alt="" class="projects-card">
+                            <h3 class="projects-title">FinFlow</h3>
 
-                        <div class="projects-modal">
-                            <div>
-                                <span class="projects-subtitle">Movil</span>
-                                <h3 class="projects-title">Fast food apps</h3>
-                                <a href="#" class="projects-button button button-small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="img/project4.jpg" alt="" class="projects-card">
+                            <p class="projects-description">
+                                Dashboard para acompanhamento de receitas, despesas e metas financeiras.
+                            </p>
 
-                        <div class="projects-modal">
-                            <div>
-                                <span class="projects-subtitle">Movil</span>
-                                <h3 class="projects-title">Travel app</h3>
-                                <a href="#" class="projects-button button button-small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="projects-card">
-                        <img src="img/project5.jpg" alt="" class="projects-card">
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
 
-                        <div class="projects-modal">
-                            <div>
-                                <span class="projects-subtitle">Design</span>
-                                <h3 class="projects-title">Music app design</h3>
-                                <a href="#" class="projects-button button button-small">
-                                    <i class="ri-link"></i>
-                                </a>
-                            </div>
+                            <span class="projects-status">Projeto demonstrativo</span>
                         </div>
                     </article>
 
+                    <article class="projects-card">
+                        <img src="img/project2.jpg" alt="Interface conceitual de uma plataforma de pagamentos"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Landing page</span>
+
+                            <h3 class="projects-title">NovaPay</h3>
+
+                            <p class="projects-description">
+                                Página para uma plataforma de pagamentos digitais moderna e segura.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS Grid</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project3.jpg" alt="Interface conceitual de um aplicativo de delivery"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Aplicativo</span>
+
+                            <h3 class="projects-title">TasteGo</h3>
+
+                            <p class="projects-description">
+                                Aplicativo de delivery para encontrar restaurantes e acompanhar pedidos.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>UI Design</li>
+                                <li>Flexbox</li>
+                                <li>Responsividade</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project4.jpg" alt="Interface conceitual de uma plataforma de viagens"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Turismo</span>
+
+                            <h3 class="projects-title">Horizon Travel</h3>
+
+                            <p class="projects-description">
+                                Plataforma para descoberta de destinos, reservas e roteiros personalizados.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project5.jpg" alt="Interface conceitual de uma plataforma de música"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Entretenimento</span>
+
+                            <h3 class="projects-title">Pulse Music</h3>
+
+                            <p class="projects-description">
+                                Experiência digital para músicas, artistas e playlists personalizadas.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>UI Design</li>
+                                <li>CSS Grid</li>
+                                <li>Acessibilidade</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project1.jpg" alt="Interface conceitual de uma plataforma de tarefas"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Produtividade</span>
+
+                            <h3 class="projects-title">Taskly</h3>
+
+                            <p class="projects-description">
+                                Gerenciador de tarefas com organização de projetos, prazos e prioridades.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project2.jpg" alt="Interface conceitual de uma plataforma de saúde"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Saúde</span>
+
+                            <h3 class="projects-title">MediCare</h3>
+
+                            <p class="projects-description">
+                                Plataforma para consultas, profissionais, horários e acompanhamento médico.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>Flexbox</li>
+                                <li>Responsividade</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project3.jpg" alt="Interface conceitual de uma plataforma fitness"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">Fitness</span>
+
+                            <h3 class="projects-title">UrbanFit</h3>
+
+                            <p class="projects-description">
+                                Aplicativo para treinos, acompanhamento de metas e evolução de desempenho.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>UI Design</li>
+                                <li>CSS Grid</li>
+                                <li>JavaScript</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
+
+                    <article class="projects-card">
+                        <img src="img/project4.jpg" alt="Interface conceitual de uma plataforma corporativa"
+                            class="projects-image" width="640" height="420" loading="lazy">
+
+                        <div class="projects-modal">
+                            <span class="projects-category">SaaS</span>
+
+                            <h3 class="projects-title">CloudDesk</h3>
+
+                            <p class="projects-description">
+                                Painel administrativo para equipes, projetos, usuários e indicadores.
+                            </p>
+
+                            <ul class="projects-technologies" aria-label="Tecnologias utilizadas">
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>Acessibilidade</li>
+                            </ul>
+
+                            <span class="projects-status">Projeto demonstrativo</span>
+                        </div>
+                    </article>
                 </div>
+                <div class="skills-content grid" data-content id="skills" role="tabpanel" aria-labelledby="skills-tab"
+                    tabindex="0" hidden>
+                    <article class="skills-area">
+                        <div class="skills-heading">
+                            <span class="skills-icon" aria-hidden="true">
+                                <i class="ri-code-box-line"></i>
+                            </span>
+                            <div>
+                                <p class="skills-eyebrow">Desenvolvimento</p>
 
-
-                <!-- SKILLS -->
-                <div class="skills-content grid" data-content id="skills">
-                    <div class="skills-area">
-                        <h3 class="skills-title">
-                            Frontend developer
-                        </h3>
-
+                                <h3 class="skills-title">
+                                    Front-end
+                                </h3>
+                            </div>
+                        </div>
                         <div class="skills-box">
                             <div class="skills-group">
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">HTML</h3>
-                                        <span class="skills-level">Basic</span>
+                                        <h4 class="skills-name">HTML5</h4>
+                                        <span class="skills-level">Estrutura semântica</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">CSS</h3>
-                                        <span class="skills-level">Advanced</span>
+                                        <h4 class="skills-name">CSS3</h4>
+                                        <span class="skills-level">Layouts e componentes</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">JavaScript</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">JavaScript</h4>
+                                        <span class="skills-level">Interações e eventos</span>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="skills-group">
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">React</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">Flexbox</h4>
+                                        <span class="skills-level">Layouts flexíveis</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
 
                                     <div>
-                                        <h3 class="skills-name">Bootstrap</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">CSS Grid</h4>
+                                        <span class="skills-level">Layouts responsivos</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
 
                                     <div>
-                                        <h3 class="skills-name">Git</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">Responsividade</h4>
+                                        <span class="skills-level">Diferentes dispositivos</span>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
-                    </div>
-                    <div class="skills-area">
-                        <h3 class="skills-title">
-                            Backend developer
-                        </h3>
+                    </article>
+                    <article class="skills-area">
+                        <div class="skills-heading">
+                            <span class="skills-icon" aria-hidden="true">
+                                <i class="ri-tools-line"></i>
+                            </span>
+                            <div>
+                                <p class="skills-eyebrow">Processos</p>
 
+                                <h3 class="skills-title">
+                                    Ferramentas e boas práticas
+                                </h3>
+                            </div>
+                        </div>
                         <div class="skills-box">
                             <div class="skills-group">
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
 
                                     <div>
-                                        <h3 class="skills-name">PHP</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">Git</h4>
+                                        <span class="skills-level">Controle de versão</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">MySQL</h3>
-                                        <span class="skills-level">Advanced</span>
+                                        <h4 class="skills-name">GitHub</h4>
+                                        <span class="skills-level">Repositórios e colaboração</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">Firebase</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">Acessibilidade</h4>
+                                        <span class="skills-level">Experiências inclusivas</span>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="skills-group">
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">Python</h3>
-                                        <span class="skills-level">Basic</span>
+                                        <h4 class="skills-name">SEO</h4>
+                                        <span class="skills-level">Estrutura otimizada</span>
                                     </div>
                                 </div>
-
                                 <div class="skills-data">
-                                    <i class="ri-checkbox-circle-line"></i>
-
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
                                     <div>
-                                        <h3 class="skills-name">Node Js</h3>
-                                        <span class="skills-level">Intermediate</span>
+                                        <h4 class="skills-name">UI/UX</h4>
+                                        <span class="skills-level">Interfaces intuitivas</span>
+                                    </div>
+                                </div>
+                                <div class="skills-data">
+                                    <i class="ri-checkbox-circle-line" aria-hidden="true"></i>
+                                    <div>
+                                        <h4 class="skills-name">Performance</h4>
+                                        <span class="skills-level">Carregamento otimizado</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
-
             </div>
         </section>
-
-
     </main>
-
-    <!-- FOOTER -->
     <footer class="footer container">
-        <span class="footer-copy">
-            &#169; <a href="https://www.github.com/shippc" target="_blank">shippc</a>. All rigths reserved
-        </span>
+        <p class="footer-copy">
+            © 2026 Gianell Vusy. Portfólio fictício para fins demonstrativos.
+        </p>
+        <p class="footer-author">
+            Desenvolvido por
+            <a href="https://wilithagency.netlify.app/" target="_blank" rel="noopener noreferrer">
+                Wilith Agency
+            </a>
+        </p>
     </footer>
-
-
-    <!-- SCROLLREVEAL -->
     <script src="js/scrollreveal.min.js"></script>
-
-    <!-- MAIN JS-->
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
